@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Suite</title>
+    <link rel="stylesheet" href="style/style.css"/>
+    <link rel="stylesheet" href="style/pygments.css"/>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-34718025-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</head>
+<body>
+<header>
+<nav>
+<ul>
+    <li><a href="/~mfaruqui/index.html">Home</a></li>
+    <li><a href="/~mfaruqui/pubs.html">Publications</a></li>
+    <li><a href="/~mfaruqui/soft.html">Software|Data|Code</a></li>
+    <li><a href="/~mfaruqui/talks.html">Talks</a></li>
+</ul>
+</nav>
+<h2><a href="/~mfaruqui/">Manaal Faruqui</a></h2>
+</header>
+
+<article>
+<h2>Lexical & Distributional Semantics Evaluation Benchmarks</h2>
+
+<p>
+This page contains various evaluation benchmarks developed and released (as open source) by researchers working in the field of semantics (in no particular order). 
+If you know of a resource that should be present here, please drop me an email. 
+
+<p>
+<font color="red">(Under construction)</font>
+<p>
+
+<h3>Index</h3>
+<ul>
+<li><a href="#enWordSim">Word Similarity</a></li>
+<li><a href="#enWordRel">Word Relations</a></li>
+<li><a href="#otherProp">Other Properties</a></li>
+<li><a href="#otherLang">Other Languages</a></li>
+</ul>
+
+<h4><a name="enWordSim">Word Similarity</a></h4>
+<ol>
+
+<li>WordSim-353. <a href="http://www.cs.technion.ac.il/~gabr/resources/data/wordsim353/">[data and reference]</a></li>
+<ul>
+<li> 353 word pairs with human similarity ratings </li>
+<li> Example: tiger, animal, 7 </li>
+</ul>
+
+<br>
+<li>WordSim-353 similarity. <a href="http://alfonseca.org/eng/research/wordsim353.html">[data and reference]</a> </li>
+<ul>
+<li> 202 word pairs that only show similarity </li>
+<li> Example: car, automobile, 8 </li>
+</ul>
+
+<br>
+<li>WordSim-353 relatedness. <a href="http://alfonseca.org/eng/research/wordsim353.html">[data and reference]</a> </li>
+<ul>
+<li> 252 word pairs that only show relatedness </li>
+<li> Example: fish, ocean, 6 </li>
+</ul>
+
+<br>
+<li>Rubenstein and Goodenough. <a href="/~mfaruqui/word-sim/EN-RG-65.txt">[data]</a> <a href="http://dl.acm.org/citation.cfm?id=365657"> [reference]</a> </li>
+<ul>
+<li> 65 noun pairs with human similarity ratings </li>
+<li> Example: tiger, animal, 7 </li>
+</ul>
+
+<br>
+<li>Miller and Charles. <a href="/~mfaruqui/word-sim/EN-MC-30.txt">[data]</a> <a href="http://www.tandfonline.com/doi/abs/10.1080/01690969108406936#.Ul7YGWTwKwE">[reference]</a> </li>
+<ul>
+<li> 30 noun pairs with human similarity ratings </li>
+<li> Example: tiger, animal, 7 </li>
+</ul>
+
+<br>
+<li>Word pair similarity using MTurk. <a href="http://www.technion.ac.il/~kirar/Datasets.html">[data]</a> <a href="http://dl.acm.org/citation.cfm?id=1963455">[reference]</a> </li>
+<ul>
+<li> 287 noun pairs with human similarity ratings </li>
+<li> Example: tiger, animal, 7 </li>
+</ul>
+
+<br>
+<li>MEN dataset of word pair similarity <a href="http://clic.cimec.unitn.it/~elia.bruni/MEN.html">[data and reference]</a> </li>
+<ul>
+<li>3000 word pairs with human similarity ratings</li>
+<li>Example: beach sand 9.6</li>
+</ul>
+
+<br>
+<li>Word pair similarity in context. <a href="http://www-nlp.stanford.edu/~ehhuang/SCWS.zip">[data]</a> <a href="http://dl.acm.org/citation.cfm?id=2390645">[reference]</a> </li>
+<ul>
+<li> 2003 word pair similarity ratings along with the sentences they occur in.</li>
+<li> Example: I <i>love</i> you, I <i>like</i> you, 6 </li>
+</ul>
+
+<br>
+<li>Rare word similarity dataset. <a href="http://www-nlp.stanford.edu/~lmthang/morphoNLM/">[data and reference]</a>
+<ul>
+<li> 2034 word pairs that are relatively rare with human similarity scores. </li>
+<li> Example: belligerence hostility 8.6 </li>
+</ul>
+
+<br>
+<li>TOEFL Word pair similarity. <a href="http://aclweb.org/aclwiki/index.php?title=TOEFL_Synonym_Questions_(State_of_the_art)">[reference]</a> </li>
+<ul>
+<li> Given a word, select the most similar from a list of four.</li>
+<li> 80 such questions. Data to be requested from authors individually!</li>
+</ul>
+
+</ol>
+
+<h4><a name="enWordRel">Word Relations</a></h4>
+
+<ol>
+
+<li>Syntactic word relations. <a href="https://code.google.com/p/word2vec/">[code, data and reference]</a> </li>
+<ul>
+<li> 10675 tuples of word pairs </li>
+<li> Example: eat : ate : : sleep : slept </li>
+</ul>
+
+<br>
+<li>Semantic word relations. <a href="https://code.google.com/p/word2vec/">[code, data and reference]</a></li>
+<ul>
+<li> 8000 tuples of word pairs </li>
+<li> Example: king : queen : : man : woman </li>
+</ul>
+
+<br>
+<li>SAT word analogy. <a href="http://aclweb.org/aclwiki/index.php?title=SAT_Analogy_Questions_(State_of_the_art)">[reference]</a> </li>
+<ul>
+<li> Given a relation (mason:stone) pick closest pair with same relation from other four</li>
+<li> 374 such questions. Data to be requested from authors individually! </li>
+</ul>
+
+<br>
+<li>Nouns and their colors. <a href="http://dl.dropbox.com/u/513347/resources/color.zip">[data]</a> <a href="http://aclweb.org/anthology//P/P12/P12-1015.bib">[reference]</a> </li>
+<ul>
+<li> 52 word pairs </li>
+<li> Example: ash, grey  </li>
+</ul>
+
+<br>
+<li>BLESS collection. <a href="https://sites.google.com/site/geometricalmodels/shared-evaluation">[data]</a> <a href="http://dl.acm.org/citation.cfm?id=2140491">[reference]</a></li>
+<ul>
+<li> A noun followed by a relation and the related word </li>
+<li> 26,554 pairs. Example: alligator, hypernym, animal </li>
+</ul>
+
+<br>
+<li>Similarity scores between phrases. <a href="http://homepages.inf.ed.ac.uk/s0453356/share">[data]</a><a href="http://aclweb.org/anthology//P/P08/P08-1028.bib">[reference]</a></li>
+<ul>
+<li> 5800 tuples of word pairs. </li>
+<li> Example: (pose, problem), (face, difficulty), 7 </li>
+</ul>
+
+<br>
+<li>SemEval 2010 Task 8. <a href="https://docs.google.com/document/d/1QO_CnmvNRnYwNWu1-QCAeR5ToQYkXUqFeAJbdEhsq7w/preview">[data and reference]</a></li>
+<ul>
+<li> 8000 pairs of words with 1 word pair per sentence </li>
+<li> Every word pair follows a particular relation. </li>
+<li> Extension of SemEval 2007 task. </li>
+</ul>
+
+<br>
+<li>SemEvam 2012 Task 2. <a href="https://sites.google.com/site/semeval2012task2/">[data and reference]</a></li>
+<ul>
+<li> Arrange a group of word pairs according to hom uch they follow a given relation.</li>
+<li> 79 such relations. Separate training and test sets.</li>
+</ul>
+
+</ol>
+
+<h4><a name="otherProp">Other Properties</a></h4>
+
+<ol>
+
+<li>MSR Sentence completion dataset. <a href="http://research.microsoft.com/en-us/projects/scc">[data and reference]</a></li>
+<ul>
+<li> Find the missing word in every sentence from 5 choices </li>
+<li> 1040 such questions. </li>
+</ul>
+
+<br>
+<li>Noun-noun entailment. <a href="http://clic.cimec.unitn.it/Files/PublicData/eacl2012-data.zip">[data]</a> <a href="http://dl.acm.org/citation.cfm?id=2380822">[reference]</a> </li>
+<ul>
+<li> 2770 word pairs where first entail the second </li>
+<li> Example: mouse : animal </li>
+</ul>
+
+<br>
+<li>Concreteness/Abstractness. <a href="http://aclweb.org/anthology//D/D11/D11-1063.bib">[reference]</a></li>
+<ul>
+<li> 100 adjective noun pairs with abstract/concrete label </li>
+<li> Example: dark mood, abstract. To be collected individually from the author! </li>
+</ul>
+
+<br>
+<li>TroFi. <a href="http://natlang.cs.sfu.ca/software/trofi.html">[data and reference]</a> </li>
+<ul>
+<li> Literal/Non-literal usage of verb in a sentence </li>
+<li> 3737 sentences. Example: I <i>killed</i> the joy </li>
+</ul>
+
+<br>
+<li>Intensional/Non-intensional adj-noun pairs. <a href="https://dl.dropboxusercontent.com/u/513347/resources/data-iwcs2013.zip">[data]</a> <a href="http://www.aclweb.org/anthology/W/W13/W13-0104.bib">[reference]</a></li>
+<ul>
+<li> 5832 phrases containing such adj-noun pairs. </li>
+</ul>
+
+<br>
+<li>Literal/Non-literal usage of colors. <a href="http://dl.dropbox.com/u/513347/resources/color.zip">[data]</a> <a href="http://www.aclweb.org/anthology/P/P12/P12-1015.bib">[reference]</a> </li>
+<ul>
+<li> 342 adj-noun pairs with their literal/non-literal label </li>
+<li> Example: blue valentine, non-literal; blue shield, literal</li>
+</ul>
+
+</ol>
+
+<h4><a name="otherLang">Other Languages</a></h4>
+
+<ol>
+
+<li>WordSim-353 for different languages  </li>
+<ul>
+<li> Arabic, Romanian and Spanish: <a href="http://lit.csci.unt.edu/~rada/downloads/CLSR-EK.tar.gz">[data]</a> <a href="http://www.samerhassan.com/images/d/d7/Hassan09a.pdf">[reference]</a></li>
+<li> French: <a href="http://www.site.uottawa.ca/~mjoub063/wordsims.htm">[data]</a> <a href="http://dl.acm.org/citation.cfm?id=2018218">[reference]</a> </li>
+</ul>
+
+<br>
+<li>Miller and Charles for different languages </li>
+<ul>
+<li> Arabic, Romanian and Spanish: <a href="http://lit.csci.unt.edu/~rada/downloads/CLSR-EK.tar.gz">[data]</a> <a href="http://www.samerhassan.com/images/d/d7/Hassan09a.pdf">[reference]</a> </li>
+</ul>
+
+<br>
+<li>German: <a href="http://www.ukp.tu-darmstadt.de/data/semantic-relatedness/german-relatedness-datasets/">[data and reference]</a> </li>
+<ul>
+<li> Rubenstein and Goodenough </li>
+<li> 350 word pairs with their human relatedness ratings </li>
+<li> 222 word pairs with their human relatedness ratings </li>
+</ul>
+
+</ol>
+
+</article>
+</body>
+</html>
+
