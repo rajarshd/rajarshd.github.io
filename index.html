@@ -96,10 +96,25 @@
               <a class="label label-success collapsed" data-toggle="collapse" data-target="#demo" aria-expanded="false">Abstract</a>
               <div id="demo" class="collapse" aria-expanded="false">
                 <p>Continuous space word embeddings learned from large, unstructured corpora have been shown to be effective at capturing semantic regularities in language. In this paper we replace LDA's parameterization of "topics" as categorical distributions over opaque word types with multivariate Gaussian distributions on the embedding space. This encourages the model to group words that are a-priori known to be semantically related into topics. To perform inference, we introduce a fast collapsed Gibbs sampling algorithm based on Cholesky decompositions of covariance matrices of the posterior predictive distributions. We further derive a scalable algorithm that draws samples from stale posterior predictive distributions and corrects them with a Metropolis--Hastings step. Using vectors learned from a domain-general corpus (English Wikipedia), we report results on two document collections (20-newsgroups and NIPS). Qualitatively, Gaussian LDA infers different (but still very sensible) topics relative to standard LDA. Quantitatively, our technique outperforms existing models at dealing with OOV words in held-out documents. </p>
-              </div>
+              </div>              
               <a class="label label-warning" target="_blank" href="http://www.cs.cmu.edu/~rajarshd/papers/acl2015.pdf">PDF</a>
               <!-- <a class="label label-primary" target="_blank" href="https://github.com/rajarshd/Gaussian_LDA">Code</a> -->
               <a class="label label-primary" target="_blank" href="http://rajarshd.github.io/Gaussian_LDA/">Project Page</a>
+              <a class="label label-info collapsed" data-toggle="collapse" data-target="#bib" aria-expanded="false">Bibtex</a>
+               <div id="bib" class="collapse" aria-expanded="false">
+               <br/>
+                @InProceedings{das-zaheer-dyer:2015:ACL-IJCNLP, <br/>
+                author    = {Das, Rajarshi  and  Zaheer, Manzil  and  Dyer, Chris}, <br/>
+                title     = {Gaussian LDA for Topic Models with Word Embeddings}, <br/>
+                booktitle = {Proceedings of the 53rd Annual Meeting of the Association for Computational Linguistics and the 7th International Joint Conference on Natural Language Processing (Volume 1: Long Papers)},<br/>
+                month     = {July},<br/>
+                year      = {2015},<br/>
+                address   = {Beijing, China},<br/>
+                publisher = {Association for Computational Linguistics},<br/>
+                pages     = {795--804},<br/>
+                url       = {http://www.aclweb.org/anthology/P15-1077}<br/>
+              }<br/>
+               </div>
             <!--<li><a href="http://oro.open.ac.uk/22343/1/QG2010-Proceedings.pdf">Question Generation using Syntax and Keywords</a>. Saidalavi Kalady, Ajeesh Elikkottil, Rajarshi Das 3rd Workshop on Question Generation (QG2010) Carnegie Mellon University, Pittsburgh, Pennsylvania.</li>-->
           </ul>
         </div>
