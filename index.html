@@ -90,6 +90,37 @@
         </div>
         <div class="well" id="pubs" style="font-size: 15px">
           <h3 id="pubs">Publications</h3>
+          <br/>
+          <h4 id="conf">Preprints</h4>
+          <ul>
+            <li>
+                 Rajarshi Das, <a href="https://people.cs.umass.edu/~arvind/">Arvind Neelakantan</a>, <a href="https://people.cs.umass.edu/~belanger/">David Belanger</a>, <a href="http://www.cs.umass.edu/~mccallum/">Andrew McCallum</a> “Chains of Reasoning over Entities, Relations, and Text using Recurrent Neural Networks” arXiv, 2016. <span style="font-size: 14px"></span>
+                <span style="font-size: 14px"><a class="label label-success collapsed" data-toggle="collapse" data-target="#lstm_emnlp16" aria-expanded="false">Abstract</a> </span>
+                <div id="lstm_emnlp16" class="collapse" aria-expanded="false" style="font-size: 12px">
+                  <p>Our goal is to combine the rich multi-step inference of symbolic logical
+                  reasoning together with the generalization capabilities of vector embeddings
+                  and neural networks. We are particularly interested in complex reasoning about
+                  the entities and relations in knowledge bases. Recently Neelakantan et al.
+                  (2015) presented a compelling methodology using recurrent neural networks
+                  (RNNs) to compose the meaning of relations in a Horn clause consisting of a
+                  connected chain. However, this work has multiple weaknesses: it accounts for
+                  relations but not entities; it limits generalization by training many separate
+                  models; it does not combine evidence over multiple paths. In this paper we
+                  address all these weaknesses, making key strides towards our goal of rich
+                  logical reasoning with neural networks: our RNN leverages and jointly trains
+                  both relation and entity type embeddings, we train a single high-capacity RNN
+                  to compose Horn clause chains across all predicted relation types; we
+                  demonstrate that pooling evidence across multiple chains can dramatically
+                  improve both speed of training and final accuracy. We also explore multi-task
+                  training of entity and relation types. On a large dataset from ClueWeb and
+                  Freebase our approach provides a significant increase in mean average precision
+                  from 55.3% to 73.2% </p>
+                </div>
+                <span style="font-size: 14px"><a class="label label-warning" target="_blank" href="http://arxiv.org/pdf/1607.01426v1.pdf">PDF</a> </span>
+            </li>
+          </ul>
+          <br/>
+
           <h4 id="conf">Conferences</h4>
             <ul>
                 <li>Rajarshi Das, <a href="http://manzil.ml/">Manzil Zaheer</a>, <a href="http://cs.cmu.edu/~cdyer/">Chris Dyer</a>, “Gaussian LDA for Topic Models with Word Embeddings.” <span style="font-size: 14px">Proceedings of ACL 2015.</span>
@@ -127,7 +158,7 @@
                 <div id="demo_naacl16" class="collapse" aria-expanded="false" style="font-size: 12px">
                   <p>Relation extraction is one of the core challenges in automated knowledge base construction. One line of approach for relation extraction is to perform multi-hop reasoning on the paths connecting an entity pair to infer new relations. While these methods have been successfully applied for knowledge base completion, they do not utilize the entity or the entity type information to make predictions. In this work, we incorporate selectional preferences, i.e., relations enforce constraints on the allowed entity types for the candidate entities, to multi-hop relation extraction by including entity type information. We achieve a 17:67% improvement in MAP score in a relation extractiontask when compared to a method that does not use entity type information. </p>
                 </div>              
-                <span style="font-size: 14px"><a class="label label-warning" target="_blank" href="papers/naaclakbc2016.pdf">PDF</a> </span>
+                <span style="font-size: 14px"><a class="label label-warning" target="_blank" href="papers/naaclakbc2016.pdf">PDF</a>  </span>
                 <span style="font-size: 14px"><a class="label label-primary" target="_blank" href="http://iesl.cs.umass.edu/downloads/akbc16/">Data</a> </span>
                 <span style="font-size: 14px"><a class="label label-info" target="_blank" href="http://people.cs.umass.edu/~rajarshi/paths.html">Visuals!</a> </span>
                 
@@ -154,6 +185,9 @@
          <div class="well" id="misc" style="font-size: 16px">
          <h3> Miscellaneous </h3>
           <ul>
+          <li>
+            06/29/2016: I gave a talk in our reading group about context dependent fine-grained entity typing. <a target="_blank" href="talks/Entity_Type.pdf">pdf</a>
+          </li>
           <li>10/07/2014 (While at CMU): I gave a talk on Dirichlet Process and related gaussian mixture models and also introduced a faster inference technique using Cholesky decomposition of scaled covariance matrices. <a target="_blank" href="talks/DPGMM_Cholesky.pdf">pdf</a>
           <br/>
           Edit: I wrote a more detailed note <a target="_blank" href="talks/DPGMM_tutorial.pdf">here</a>.
