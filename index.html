@@ -97,28 +97,25 @@
                  Rajarshi Das, <a href="https://people.cs.umass.edu/~arvind/">Arvind Neelakantan</a>, <a href="https://people.cs.umass.edu/~belanger/">David Belanger</a>, <a href="http://www.cs.umass.edu/~mccallum/">Andrew McCallum</a> “Chains of Reasoning over Entities, Relations, and Text using Recurrent Neural Networks” arXiv, 2016. <span style="font-size: 14px"></span>
                 <span style="font-size: 14px"><a class="label label-success collapsed" data-toggle="collapse" data-target="#lstm_emnlp16" aria-expanded="false">Abstract</a> </span>
                 <div id="lstm_emnlp16" class="collapse" aria-expanded="false" style="font-size: 12px">
-                  <p>Our goal is to combine the rich multi-step inference of symbolic logical
-                  reasoning together with the generalization capabilities of vector embeddings
-                  and neural networks. We are particularly interested in complex reasoning about
-                  the entities and relations in knowledge bases. Recently Neelakantan et al.
-                  (2015) presented a compelling methodology using recurrent neural networks
-                  (RNNs) to compose the meaning of relations in a Horn clause consisting of a
-                  connected chain. However, this work has multiple weaknesses: it accounts for
-                  relations but not entities; it limits generalization by training many separate
-                  models; it does not combine evidence over multiple paths. In this paper we
-                  address all these weaknesses, making key strides towards our goal of rich
-                  logical reasoning with neural networks: our RNN leverages and jointly trains
-                  both relation and entity type embeddings, we train a single high-capacity RNN
-                  to compose Horn clause chains across all predicted relation types; we
-                  demonstrate that pooling evidence across multiple chains can dramatically
-                  improve both speed of training and final accuracy. We also explore multi-task
-                  training of entity and relation types. On a large dataset from ClueWeb and
-                  Freebase our approach provides a significant increase in mean average precision
-                  from 55.3% to 73.2% </p>
+                  <p>Our goal is to combine the rich multistep inference of symbolic logical
+                    reasoning with the generalization capabilities of neural networks. We are
+                    particularly interested in complex reasoning about entities and relations in
+                    text and large-scale knowledge bases (KBs). Neelakantan et al. (2015) use RNNs
+                    to compose the distributed semantics of multi-hop paths in KBs; however for
+                    multiple reasons, the approach lacks accuracy and practicality. This paper
+                    proposes three significant modeling advances: (1) we learn to jointly reason
+                    about relations, entities, and entity-types; (2) we use neural attention
+                    modeling to incorporate multiple paths; (3) we learn to share strength in a
+                    single RNN that represents logical composition across all relations. On a
+                    largescale Freebase+ClueWeb prediction task, we achieve 25% error reduction,
+                    and a 53% error reduction on sparse relations due to shared strength. On chains
+                    of reasoning in WordNet we reduce error in mean quantile by 84% versus previous
+                    state-of-the-art.</p>
                 </div>
-                <span style="font-size: 14px"><a class="label label-warning" target="_blank" href="http://arxiv.org/pdf/1607.01426v1.pdf">PDF</a> </span>
+                <span style="font-size: 14px"><a class="label label-warning" target="_blank" href="http://arxiv.org/pdf/1607.01426v2.pdf">PDF</a> </span>
                  <span style="font-size: 14px"><a class="label label-info" target="_blank" href="talks/Chains_of_Reasoning.pdf">Slides</a> </span>
                  <span style="font-size: 14px"><a class="label label-primary" target="_blank" href="http://videolectures.net/deeplearning2016_das_neural_networks/">Talk</a> </span>
+                 <span style="font-size: 14px"><a class="label label-warning" target="_blank" href="http://rajarshd.github.io/ChainsofReasoning">Code</a> </span>
             </li>
           </ul>
           <br/>
