@@ -39,21 +39,23 @@
          ga('send', 'pageview');
          
       </script>
-	   
-<script type="text/javascript">
-  var imageURLs = [
-       "images/raj.jpg",
-	  "images/raj2.jpeg"
+   $(document).ready(function() {
+
+  var description = [
+    "images/raj.jpg",
+	   "images/raj2.jpeg"
   ];
-  function getImageTag() {
-    var img = '<img src=\"';
-    var randomIndex = Math.floor(Math.random() * imageURLs.length);
-    img += imageURLs[randomIndex];
-    img += '\" alt=\"\" width=\"175px\"/>';
-    var div_tag = '<div><span class=\"lfloat\">' + img + "</span></div>";
-    return div_tag;
-  }
-</script>
+
+  var size = description.length
+  $('.item img').each(function() {
+  	var x = Math.floor(size * Math.random())
+    if ($(this).hasClass("lfloat")) {
+      $(this).attr("src", description[x]);
+    }
+  });
+
+});
+
    </head>
    <body>
       <div class="container">
@@ -62,10 +64,7 @@
             <tbody>
                <tr>
                   <td width="0pct" valign="top">
-<!--                      <div><span class="lfloat"><img width="175px" src="images/raj2.jpeg" alt="" title="Rajarshi Das"></span></div> -->
-		  <script type="text/javascript">
-		      getImageTag();
-		  </script>
+                     <div><span class="lfloat"><img width="175px" src="" alt="" title="Rajarshi Das"></span></div>
                   </td>
                   <td valign="center" margin-top="10px" style="font-size: 0pt;">
                      <p>
