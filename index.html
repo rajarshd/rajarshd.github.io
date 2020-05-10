@@ -39,6 +39,22 @@
          ga('send', 'pageview');
          
       </script>
+	   
+<script type="text/javascript">
+  var imageURLs = [
+       "images/raj.jpg",
+	  "images/raj2.jpeg"
+  ];
+  function getImageTag() {
+	  <div><span class="lfloat"><img width="175px" src="images/raj2.jpeg" alt="" title="Rajarshi Das"></span></div>
+    var img = '<img src=\"';
+    var randomIndex = Math.floor(Math.random() * imageURLs.length);
+    img += imageURLs[randomIndex];
+    img += '\" alt=\"\" width=\"175px\"/>';
+    var div_tag = '<div><span class=\"lfloat\">' + img + "</span></div>";
+    return div_tag;
+  }
+</script>
    </head>
    <body>
       <div class="container">
@@ -47,7 +63,10 @@
             <tbody>
                <tr>
                   <td width="0pct" valign="top">
-                     <div><span class="lfloat"><img width="175px" src="images/raj2.jpeg" alt="" title="Rajarshi Das"></span></div>
+<!--                      <div><span class="lfloat"><img width="175px" src="images/raj2.jpeg" alt="" title="Rajarshi Das"></span></div> -->
+		  <script type="text/javascript">
+			  document.write(getImageTag());
+		  </script>
                   </td>
                   <td valign="center" margin-top="10px" style="font-size: 0pt;">
                      <p>
